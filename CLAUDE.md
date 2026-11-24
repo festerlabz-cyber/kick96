@@ -15,6 +15,8 @@ Owner speaks Dutch; write user-facing docs in Dutch, GUI text in English.
 - `Source/PluginEditor.*`, `UIComponents.h` — GUI at 1160×372, scaled as a whole. Same layout as the prototype:
   Input/Mix column, big Drive knob, six groups (Punch, Focus, Shape, Sub, Tone, Out), bottom bar Mode / Quality / Presets.
 - `.github/workflows/build-macos.yml` — universal AU + VST3, auval, DMG artifact with install script.
+- `.github/workflows/build-windows.yml` — Windows x64 VST3 (MSVC, static runtime), pluginval strictness 5, zip artifact
+  with `packaging/LEESMIJ-Windows.txt`.
 
 ## Decisions
 - Manufacturer code `Btbt`, plug-in code `Kk96`, bundle id `com.boomtownbeats.kick96`. Never change these.
